@@ -69,3 +69,41 @@ let myMultiply: (a: number, b: number) => number;
 myMultiply = multiply;
 console.log(myMultiply(3, 4));
 
+// objects
+let userData: {name: string, age: number} = {
+    name: "Max",
+    age: 27
+};
+// userData = {
+//     name: "hi",
+//     b: 22
+// }
+
+// complex object
+let complex: { data: number[], output: (all: boolean) => number[] } = {
+    data: [1, 2, 3],
+
+    output: function (all: boolean): number[] {
+        if (all === true) {
+            return this.data;
+        } else {
+            return [];
+        }
+    }
+}
+// complex = {};
+
+type Complex = {data: number[], output: (all: boolean) => number[]};
+
+let complex2: Complex = {
+    data: [1, 2, 3],
+
+    output: function (all: boolean): number[] {
+        if (all === true) {
+            return this.data;
+        } else {
+            return [];
+        }
+    }
+}
+
