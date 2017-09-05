@@ -107,3 +107,27 @@ let complex2: Complex = {
     }
 }
 
+// union types
+let myRealRealAge: number | string | boolean = 27;
+myRealRealAge = "27";
+myRealRealAge = true;
+// myRealRealAge = [1, 2, 3];
+
+// check types
+let finalValue = "A string";
+if (typeof finalValue == "string"){
+    console.log("Final value is a string");
+}
+
+// never
+function neverReturns(): never {
+    throw new Error('An error!');
+}
+
+// Nullable Types -- strictNullChecks
+let canBeNull: number | null = 12;
+canBeNull = null;
+let canAlsoBeNull;
+canAlsoBeNull = null;
+let canThisBeAny = null;
+// canThisBeAny = 12;
