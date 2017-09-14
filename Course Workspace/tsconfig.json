@@ -2,9 +2,11 @@
     "compilerOptions": {
         "module": "commonjs",
         "target": "es5",
+        "sourceMap": true,
         "noImplicitAny": false,
-        "sourceMap": false,
-        "strictNullChecks": true
+        "strictNullChecks": true,
+        "noEmitOnError": true,
+        "outDir": "./js files"
     },
     "exclude": [
         "node_modules"
