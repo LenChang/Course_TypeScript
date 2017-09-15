@@ -6,7 +6,7 @@
         "noImplicitAny": false,
         "strictNullChecks": true,
         "noEmitOnError": true,
-        "outDir": "./js files"
+        "outDir": "./js_files"
     },
     "exclude": [
         "node_modules"
