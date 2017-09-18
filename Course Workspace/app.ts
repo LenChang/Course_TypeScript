@@ -1,15 +1,17 @@
-let myNameName: string = "Len";
-let myAgeAge: number = 27;
-let anything;
-anything = 12;
+// let & const
+let varialbe = "Test";
+console.log(varialbe);
+varialbe = "Another value";
+console.log(varialbe);
 
-// // If you enable "noUnusedParameters", function doesn't accept unused params
-// function controlMe(isTrue: boolean, somethingElse: boolean) {
-//     let result: number;
-//     if (isTrue) {
-//         result = 12;
-//     } else {
-//         result = 33;
-//     }
-//     return result;
-// }
+const maxlevels = 100;
+// maxlevels = 99; // It isn't working.
+
+// Block scope
+function reset(){
+    // console.log(variable); // Undefined error
+    let variable = null;
+    console.log(variable);
+}
+reset();
+console.log(varialbe);
